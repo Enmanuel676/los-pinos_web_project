@@ -1,32 +1,171 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./src/home/home.css">
+    <title>Los Pinos | Resort & Camping</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Boxicons for icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/styles/home/home.css">
 </head>
 <body>
-<header>
-    <img src="" alt="">
-    <ul  class="header">
-        <li class="header__link">
-            <a href="/home">Inicio</a>
-        </li>
-        <li class="header__link">
-            <a href="/acerca-de">Acerca de</a>
-        </li>
-        <li class="header__link">
-            <a href="/servicios">Servicios</a>
-        </li>
-        <li class="header__link">
-            <a href="/contacto">Contacto</a>
-        </li>
-    </ul>
-</header>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">
+            <div class="logo-icon">
+              <i class="logo-img"></i>
+            </div>
+            <span class="logo-text">Los <span class="highlight">Pinos</span></span>
+        </div>
+        <nav class="nav-links">
+            <a href="/home" class="active">Inicio</a>
+            <a href="#platos">Platos</a>
+            <a href="#galeria">Galería</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+        <a href="#reservar" class="btn btn-outline-primary nav-btn badge">Reservar</a>
+        
+        <!-- Mobile Menu Toggle -->
+        <div class="menu-toggle">
+            <i class='bx bx-menu'></i>
+        </div>
+    </header>
 
-    <h1>hello world</h1>
-    <a href="/home" class="title">Home</a>
-    <script type="module" src="./src/main.js"></script>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-bg-image"></div>
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <div class="badge">RESORT & CAMPING &mdash; PARAÍSO TROPICAL</div>
+                <h1 class="hero-title">
+                    <span class="outline-text">Oasis</span><br>
+                    <span class="solid-text">Los Pinos</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Piscina infinita, palmeras y el atardecer más espectacular de<br>
+                    la sierra. Un paraíso donde el tiempo se detiene.
+                </p>
+                <div class="hero-actions">
+                    
+                    <a href="https://wa.me/qr/U4A5MXBXK6RQB1" target="_blank" class="btn btn-primary btn-glow badge badge__whatsapp"><i class='bx bxl-whatsapp'></i> Reservar por WhatsApp</a>
+                    <a href="#products"class="btn btn-outline-light badge badge__products">Productos y Ofertas</a>
+                    <a href="#galeria" class="btn btn-outline-light badge badge__gallery">Ver Fotos</a>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span>EXPLORAR</span>
+                <i class='bx bx-down-arrow-alt'></i>
+            </div>
+        </section>
+
+        <!-- Nuestra Historia Section -->
+        <section class="historia">
+            <div class="container historia-grid">
+                <div class="historia-content">
+                    <!--<span class="section-subtitle">NUESTRA HISTORIA</span>-->
+                    <h2 class="section-title">Donde el Pino<br><span class="highlight">es el anfitrión</span></h2>
+                    <p class="section-text">
+                         Los Pinos nació del deseo de crear un espacio donde la naturaleza no es el decorado, sino el protagonista.
+                    </p>
+                    <p class="section-text">
+                        Cada cabaña, cada sendero y cada plato de nuestra cocina está diseñado para ofrecer el mejor servicio en nuestras instalaciones.
+                    </p>
+                    <a href="#visita" class="link-arrow">Planear mi visita <i class='bx bx-right-arrow-alt'></i></a>
+                </div>
+                <div class="historia-image-wrapper">
+                    <div class="historia-image"></div>
+                    <div class="quote-card">
+                       <p class="quote-text">(Reseña)</p>
+                        <p class="quote-author">&mdash; HUÉSPED, 2026</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features">
+            <div class="container features-grid">
+                <!-- Feature 1 -->
+                <div class="feature-card">
+                    <div class="feature-icon"><i class='bx bx-leaf'></i></div>
+                    <h3 class="feature-title">2 Hectáreas</h3>
+                    <p class="feature-text">De bosque primario repleto de arboles y naturaleza</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="feature-card">
+                    <div class="feature-icon"><i class='bx bx-star'></i></div>
+                    <h3 class="feature-title">Gastronomía Local</h3>
+                    <p class="feature-text">Platos tradicionales elaborados con ingredientes del bosque</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="feature-card">
+                    <div class="feature-icon"><i class='bx bx-spa'></i></div>
+                    <h3 class="feature-title">Comfort</h3>
+                    <p class="feature-text">Zona de entretenimiento, diseñada para el disfrute en familia</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-card">
+                    <h2>¿Listo para desconectar?</h2>
+                    <p>Nuestras cabañas tienen capacidad limitada.<br>Asegura tu lugar en este oasis hoy!!</p>
+                    <div class="cta-actions">
+                        <a href="#whatsapp" class="btn btn-primary btn-glow badge badge__whatsapp">Contactar por WhatsApp</a>
+                        <a href="#cocina" class="btn btn-outline-light badge badge__products-about">Ver Nuestra Cocina</a>
+                    </div>
+                     <iframe class="location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2255.0166419192456!2d-76.6112875!3d20.8549681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ed20d9a2b6e2b93%3A0xcfa13dd2996aa5c0!2sMotel%20Los%20Pinos!5e1!3m2!1ses-419!2sus!4v1781714955998!5m2!1ses-419!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                
+            </div>
+           
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <div class="logo">
+                    <div class="logo-icon"><i class='logo-img'></i></div>
+                    <span class="logo-text">Los <span class="highlight">Pinos</span></span>
+                </div>
+                <p class="footer-desc">Resort & Camping de naturaleza. Donde el disfrute del cliente es nuestra prioridad!.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h4 class="footer-heading">NAVEGACIÓN</h4>
+                <ul>
+                    <li><a href="/home">Inicio</a></li>
+                    <li><a href="#platos">Platos</a></li>
+                    <li><a href="#galeria">Galería</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-contact">
+                <h4 class="footer-heading">CONTACTO</h4>
+                <ul>
+                    <li><i class='bx bx-phone'></i> +1 (234) 567-890</li>
+                    <li><i class='bx bx-envelope'></i> info@lospinos.com</li>
+                    <li><i class='bx bx-map'></i> Los Pinos, Buenaventura, Holguin, CU</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="container footer-bottom">
+            <p>&copy; 2026 LOS PINOS RESORT & CAMPING &mdash; TODOS LOS DERECHOS RESERVADOS</p>
+            <p class="coordinates">LAT: 20.855303165706022&deg; N / LON: -76.61119233080339&deg; W</p>
+        </div>
+    </footer> 
+    <script src="./server/local-server.js"></script>
 </body>
-</html> 
+</html
