@@ -99,7 +99,7 @@ h1, h2, h3, h4, h5, h6, .logo-text {
 .navbar {
     position: sticky;
     margin: auto;
-margin-top: -10%;
+    margin-top: 10px;
     border-radius: 50px;
     backdrop-filter: blur(30px) saturate(180%);
     border: 1px solid var(--primary-color);
