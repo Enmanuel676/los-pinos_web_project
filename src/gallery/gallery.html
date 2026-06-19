@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="../../styles/gallery.css">
     <link rel="stylesheet" href="../../styles/popup.css">
 </head>
-<body>
+<body id="gallery" class="gallery-body">
     <!-- Navbar -->
     <header class="navbar">
         <div class="logo">
@@ -49,7 +49,7 @@
         <div class="gallery-grid">
             <!-- Gallery Item 1 -->
             <div class="gallery-item">
-                <img src="../../images/image4.png" alt="Piscina unica" class="gallery-img">
+                <img src="../../images/image4.webp" alt="Piscina unica" class="gallery-img">
                 <div class="gallery-overlay">
                     <i class='bx bx-zoom-in'></i>
                     <span>Piscina </span>
@@ -58,7 +58,7 @@
             
             <!-- Gallery Item 2 -->
             <div class="gallery-item">
-                <img src="../../images/image3.1.png" alt="Piscina al atardecer" class="gallery-img">
+                <img src="../../images/image3.1.webp" alt="Piscina al atardecer" class="gallery-img">
                 <div class="gallery-overlay">
                     <i class='bx bx-zoom-in'></i>
                     <span>Atardeceres Únicos</span>
@@ -129,13 +129,13 @@
             <div class="popup__options">
                 <button class="popup__option" onclick="window.location.href='../../index.html'">Inicio</button>
                 <button class="popup__option ">Ofertas</button>
-                <button class="popup__option active">Galería</button>
-                <button class="popup__option">Contacto</button>
+                <button class="popup__option active" onclick="window.location.href='#gallery'">Galería</button>
+                <button class="popup__option" onclick="window.location.href='../../index.html#contact'">Contacto</button>
                 <button class="popup__btn-reservar">Reservar</button>
             </div>
         </div>
     </div>
     <script type="module" src="../../scripts/main.js"></script>
-  
+  <script src="../../scripts/gallery.js"></script>
 </body>
 </html>

@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="styles/home.css">
     <link rel="stylesheet" href="styles/popup.css">
 </head>
-<body>
+<body id="home">
     <!-- Navbar -->
     <header class="navbar">
         <div class="logo">
@@ -27,7 +27,7 @@
             <a href="index.html" class="active">Inicio</a>
             <a href="/scripts/popup.html">Ofertas</a>
             <a href="/src/gallery/gallery.html">Galería</a>
-            <a href="#contacto">Contacto</a>
+            <a href="#contact">Contacto</a>
         </nav>
         <a href="#reservar" class="btn btn-outline-primary nav-btn badge">Reservar</a>
         
@@ -39,7 +39,7 @@
 
     <main>
         <!-- Hero Section -->
-        <section class="hero">
+        <section class="hero" >
             <div class="hero-bg-image"></div>
             <div class="hero-overlay"></div>
             <div class="hero-content">
@@ -49,8 +49,8 @@
                     <span class="solid-text">Los Pinos</span>
                 </h1>
                 <p class="hero-subtitle">
-                    Piscina infinita, palmeras y el atardecer más espectacular de<br>
-                    la sierra. Un paraíso donde el tiempo se detiene.
+                    Piscina infinita, palmeras y el atardecer más <span class="hero-text">espectacular</span>  <br>
+                    Un paraíso donde el tiempo se detiene.
                 </p>
                 <div class="hero-actions">
                     
@@ -114,10 +114,10 @@
         </section>
 
         <!-- CTA Section -->
-        <section class="cta-section">
+        <section class="cta-section" id="contact">
             <div class="container">
                 <div class="cta-card">
-                    <h2>¿Listo para desconectar?</h2>
+                    <h2 >¿Listo para desconectar?</h2>
                     <p>Nuestras cabañas tienen capacidad limitada.<br>Asegura tu lugar en este oasis hoy!!</p>
                     <div class="cta-actions">
                         <a href="#whatsapp" class="btn btn-primary btn-glow badge badge__whatsapp">Contactar por WhatsApp</a>
@@ -172,10 +172,10 @@
     <div class="popup hidden" id="mobile-menu">
         <div class="popup__container">
             <div class="popup__options">
-                <button class="popup__option active" >Inicio</button>
+                <button class="popup__option active popup__option_home" onclick="window.location.href='#home'" >Inicio</button>
                 <button class="popup__option " onclick="window.location.href='src/offers/offers.html'">Ofertas</button>
                 <button class="popup__option" onclick="window.location.href='src/gallery/gallery.html'">Galería</button>
-                <button class="popup__option" onclick="window.location.href='src/contact/contact.html'">Contacto</button>
+                <button class="popup__option popup__option_contact" onclick="window.location.href='#contact'">Contacto</button>
                 <a class="popup__btn-reservar" target="_blank" href="https://www.google.com">Reservar</a>
             </div>
         </div>

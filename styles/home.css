@@ -23,6 +23,7 @@ body {
     font-family: var(--font-body);
     line-height: 1.6;
     overflow-x: hidden;
+    z-index: 1;
 }
 
 /* Typography */
@@ -32,6 +33,16 @@ h1, h2, h3, h4, h5, h6, .logo-text {
 
 .highlight {
     color: var(--primary-color);
+}
+.hero-text{
+    color: var(--primary-color);
+    font-size: 20px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-weight:900;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    backdrop-filter: blur(5px);
+    border-radius: 30px;
+    padding: 10px;
 }
 
 /* Buttons */
@@ -111,7 +122,7 @@ h1, h2, h3, h4, h5, h6, .logo-text {
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem 4rem;
-    z-index: 100;
+    z-index: 2;
 }
 
 .navbar__hidden{
@@ -138,7 +149,7 @@ h1, h2, h3, h4, h5, h6, .logo-text {
     font-size: 1.1rem;
 }
 .logo-img{
-    background-image: url(../../images/logo.icon.png);
+    background-image: url(../../images/logo.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -194,6 +205,7 @@ h1, h2, h3, h4, h5, h6, .logo-text {
     justify-content: center;
     text-align: center;
     padding: 0 2rem;
+   margin-top: -120px;
 }
 
 .hero-bg-image {
@@ -204,7 +216,7 @@ h1, h2, h3, h4, h5, h6, .logo-text {
     height: 100%;
     /* Placeholder background styling, you will replace with actual image */
     background: 
-                url('../../images/image3.1.png') center/cover no-repeat;
+                url('../images/image3.1.webp') center/cover no-repeat;
     z-index: -2;
     filter: brightness(0.6);
 }
@@ -249,6 +261,11 @@ linear-gradient(180deg, rgba(84, 84, 84, 0.8) 0%, rgba(6, 9, 7, 1) 100%), */
    padding-top: 0.6rem;
 font-size: 20px;
 }
+.nav-btn{
+    margin-top: 10px;
+    padding: 0.6rem;
+}
+
 .location{
     width: 70%;
     height: 500px;
@@ -383,7 +400,7 @@ color: #176017;
     width: 100%;
     height: 600px;
     /* Placeholder background styling, replace with actual image */
-    background: url('../../images/image4.png') center/cover no-repeat;
+    background: url('../../images/image4.webp') center/cover no-repeat;
     border-radius: 20px;
 }
 
