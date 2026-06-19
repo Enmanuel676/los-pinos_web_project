@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="../../styles/home.css">
     <!-- Link to gallery specific styles -->
     <link rel="stylesheet" href="../../styles/gallery.css">
+    <link rel="stylesheet" href="../../styles/popup.css">
 </head>
 <body>
     <!-- Navbar -->
@@ -72,8 +73,8 @@
                     <span>?</span>
                 </div>
             </div>-->
-
-           
+             <!-- Gallery Item ? -->
+            
     
     </main>
 
@@ -122,6 +123,19 @@
         </div>
     </dialog>
 
-    <script type="module" src="script/gallery.js"></script>
+      <!-- Mobile Popup Menu -->
+    <div class="popup hidden" id="mobile-menu">
+        <div class="popup__container">
+            <div class="popup__options">
+                <button class="popup__option" onclick="window.location.href='../../index.html'">Inicio</button>
+                <button class="popup__option ">Ofertas</button>
+                <button class="popup__option active">Galería</button>
+                <button class="popup__option">Contacto</button>
+                <button class="popup__btn-reservar">Reservar</button>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="../../scripts/main.js"></script>
+  
 </body>
 </html>

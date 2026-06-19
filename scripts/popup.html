@@ -7,19 +7,18 @@
     <link rel="stylesheet" href="../styles/popup.css">
 </head>
 <body>
-    <div>
-        <div>
-            <h2>Opciones</h2>
-            <div>
-                <button class="btn">Inicio</button>
-                <button class="btn">Ofertas</button>
-                <button class="btn">Galería</button>
-                <button class="btn">Contacto</button>
-                <button class="btn">Reservar</button>
+    <div class="popup" id="mobile-menu">
+        <div class="popup__container">
+            <div class="popup__options">
+                <button class="popup__option" onclick="window.location.href='../index.html'">Inicio</button>
+                <button class="popup__option active">Ofertas</button>
+                <button class="popup__option">Galería</button>
+                <button class="popup__option">Contacto</button>
+                 <a class="popup__btn-reservar" target="_blank" href="https://www.google.com">Reservar</a>
             </div>
         </div>
        
     </div>
-    <script src="./popup/popup.js"></script>
+    
 </body>
 </html>
