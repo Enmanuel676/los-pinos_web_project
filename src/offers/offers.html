@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los Pinos | Ofertas</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Boxicons for icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <!-- Link to global home styles to preserve navbar -->
+    <link rel="stylesheet" href="../../styles/home.css">
+    <!-- Link to offers specific styles -->
+    <link rel="stylesheet" href="../../styles/offers.css">
+    <link rel="stylesheet" href="../../styles/popup.css">
+</head>
+<body id="offers" class="offers-body">
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">
+            <div class="logo-icon">
+              <i class="logo-img"></i>
+            </div>
+            <span class="logo-text">Los <span class="highlight">Pinos</span></span>
+        </div>
+        <nav class="nav-links">
+            <a href="../../index.html">Inicio</a>
+            <a href="#" class="active">Ofertas</a>
+            <a href="../../src/gallery/gallery.html">Galería</a>
+            <a href="../../index.html#contact">Contacto</a>
+        </nav>
+        <a href="../../index.html#reservar" class="btn btn-outline-primary nav-btn badge">Reservar</a>
+        
+        <!-- Mobile Menu Toggle -->
+        <div class="menu-toggle">
+            <i class='bx bx-menu'></i>
+        </div>
+    </header>
+
+    <main class="offers-container">
+        <div class="offers-header">
+            <h1 class="offers-title">Nuestras <span class="highlight">Ofertas</span></h1>
+            <p class="offers-subtitle">Descubre nuestra exquisita variedad gastronómica y de bebidas en el mejor ambiente.</p>
+        </div>
+
+        <!-- Section 1: Entrantes o emparedados -->
+        <section class="offers-section">
+            <h2 class="section-heading">Entrantes y Emparedados</h2>
+            <div class="carousel-container">
+                <button class="carousel-btn prev-btn" aria-label="Anterior"><i class='bx bx-chevron-left'></i></button>
+                <div class="carousel-track" id="track-entrantes">
+                    <!-- Product 1 -->
+                    <div class="product-card">
+                        <img src="../../images/sandwich.png" alt="Club Sandwich Gourmet" class="product-img">
+                        <div class="product-info">
+                            <h3 class="product-name">Club Sandwich Gourmet</h3>
+                            <p class="product-price">$12.00</p>
+                        </div>
+                    </div>
+                    <!-- Product 2 -->
+                    <div class="product-card">
+                        <img src="../../images/sandwich.png" alt="Tapas Españolas" class="product-img">
+                        <div class="product-info">
+                            <h3 class="product-name">Tapas Españolas</h3>
+                            <p class="product-price">$9.50</p>
+                        </div>
+                    </div>
+                    <!-- Product 3 -->
+                    <div class="product-card">
+                        <img src="../../images/sandwich.png" alt="Pan al Ajillo" class="product-img">
+                        <div class="product-info">
+                            <h3 class="product-name">Pan al Ajillo</h3>
+                            <p class="product-price">$5.00</p>
+                        </div>
+                    </div>
+                    <!-- Product 4 -->
+                    <div class="product-card">
+                        <img src="../../images/sandwich.png" alt="Emparedado de Pollo" class="product-img">
+                        <div class="product-info">
+                            <h3 class="product-name">Emparedado de Pollo</h3>
+                            <p class="product-price">$8.50</p>
+                        </div>
+                    </div>
+                    <!-- Product 5 -->
+                    <div class="product-card">
+                        <img src="../../images/sandwich.png" alt="Nachos con Queso" class="product-img">
+                        <div class="product-info">
+                            <h3 class="product-name">Nachos con Queso</h3>
+                            <p class="product-price">$10.00</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn next-btn" aria-label="Siguiente"><i class='bx bx-chevron-right'></i></button>
+            </div>
+        </section>
+
+        <!-- Section 2: Comidas -->
+        <section class="offers-section">
+            <h2 class="section-heading">Comidas</h2>
+            <div class="carousel-container">
+                <button class="carousel-btn prev-btn" aria-label="Anterior"><i class='bx bx-chevron-left'></i></button>
+                <div class="carousel-track" id="track-comidas">
+                    <!-- Product 1 -->
+                    <div class="product-card">
+                        <img src="../../images/meal.png" alt="Pechuga a la Parrilla" class="product-img">
+                        <div class="product-info">
+                            <h3 class="product-name">Pechuga a la Parrilla</h3>
+                            <p class="product-price">$18.00</p>
+                            <button class="btn btn-outline-primary btn-sm info-btn" data-ingredients="Pechuga de pollo fresca, vegetales salteados, especias finas, salsa de la casa, guarnición a elegir.">
+                                <i class='bx bx-info-circle'></i> Ver Ingredientes
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Product 2 -->
+                    <div class="product-card">
+                        <img src="../../images/meal.png" alt="Filete Mignon" class="product-img">
+                        <div class="product-info">
+                            <h3 class="product-name">Filete Mignon</h3>
+                            <p class="product-price">$25.00</p>
+                            <button class="btn btn-outline-primary btn-sm info-btn" data-ingredients="Medallón de res, tocino ahumado, salsa de champiñones, puré de papa rústico.">
+                                <i class='bx bx-info-circle'></i> Ver Ingredientes
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Product 3 -->
+                    <div class="product-card">
+                        <img src="../../images/meal.png" alt="Pasta Alfredo con Mariscos" class="product-img">
+                        <div class="product-info">
+                            <h3 class="product-name">Pasta Alfredo</h3>
+                            <p class="product-price">$22.00</p>
+                            <button class="btn btn-outline-primary btn-sm info-btn" data-ingredients="Pasta fresca, camarones, calamares, salsa cremosa Alfredo, queso parmesano, perejil.">
+                                <i class='bx bx-info-circle'></i> Ver Ingredientes
+                            </button>
+                        </div>
+                    </div>
+                     <!-- Product 4 -->
+                     <div class="product-card">
+                        <img src="../../images/meal.png" alt="Lomo Saltado" class="product-img">
+                        <div class="product-info">
+                            <h3 class="product-name">Lomo Saltado</h3>
+                            <p class="product-price">$20.00</p>
+                            <button class="btn btn-outline-primary btn-sm info-btn" data-ingredients="Trozos de lomo de res, cebolla morada, tomate, papas fritas, arroz blanco.">
+                                <i class='bx bx-info-circle'></i> Ver Ingredientes
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn next-btn" aria-label="Siguiente"><i class='bx bx-chevron-right'></i></button>
+            </div>
+        </section>
+
+        <!-- Section 3: Bebidas -->
+        <section class="offers-section">
+            <h2 class="section-heading">Bebidas</h2>
+            <div class="carousel-container">
+                <button class="carousel-btn prev-btn" aria-label="Anterior"><i class='bx bx-chevron-left'></i></button>
+                <div class="carousel-track" id="track-bebidas">
+                    <!-- Product 1 -->
+                    <div class="product-card">
+                        <img src="../../images/drink.png" alt="Mojito Clásico" class="product-img">
+                        <div class="product-info">
+                            <h3 class="product-name">Mojito Clásico</h3>
+                            <p class="product-price">$6.00</p>
+                        </div>
+                    </div>
+                    <!-- Product 2 -->
+                    <div class="product-card">
+                        <img src="../../images/drink.png" alt="Piña Colada" class="product-img">
+                        <div class="product-info">
+                            <h3 class="product-name">Piña Colada</h3>
+                            <p class="product-price">$7.00</p>
+                        </div>
+                    </div>
+                    <!-- Product 3 -->
+                    <div class="product-card">
+                        <img src="../../images/drink.png" alt="Cerveza Artesanal" class="product-img">
+                        <div class="product-info">
+                            <h3 class="product-name">Cerveza Artesanal</h3>
+                            <p class="product-price">$5.00</p>
+                        </div>
+                    </div>
+                    <!-- Product 4 -->
+                    <div class="product-card">
+                        <img src="../../images/drink.png" alt="Jugo Natural" class="product-img">
+                        <div class="product-info">
+                            <h3 class="product-name">Jugo Natural</h3>
+                            <p class="product-price">$4.00</p>
+                        </div>
+                    </div>
+                    <!-- Product 5 -->
+                    <div class="product-card">
+                        <img src="../../images/drink.png" alt="Margarita" class="product-img">
+                        <div class="product-info">
+                            <h3 class="product-name">Margarita</h3>
+                            <p class="product-price">$8.00</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn next-btn" aria-label="Siguiente"><i class='bx bx-chevron-right'></i></button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (Same as index.html for consistency) -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <div class="logo">
+                    <div class="logo-icon"><i class='logo-img'></i></div>
+                    <span class="logo-text">Los <span class="highlight">Pinos</span></span>
+                </div>
+                <p class="footer-desc">Resort & Camping de naturaleza. Donde el disfrute del cliente es nuestra prioridad!.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h4 class="footer-heading">NAVEGACIÓN</h4>
+                <ul>
+                    <li><a href="../../index.html">Inicio</a></li>
+                    <li><a href="#">Ofertas</a></li>
+                    <li><a href="../../src/gallery/gallery.html">Galería</a></li>
+                    <li><a href="../../index.html#contact">Contacto</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-contact">
+                <h4 class="footer-heading">CONTACTO</h4>
+                <ul>
+                    <li><i class='bx bx-phone'></i> +1 (234) 567-890</li>
+                    <li><i class='bx bx-envelope'></i> info@lospinos.com</li>
+                    <li><i class='bx bx-map'></i> Los Pinos, Buenaventura, Holguin, CU</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="container footer-bottom">
+            <p>&copy; 2026 LOS PINOS RESORT & CAMPING &mdash; TODOS LOS DERECHOS RESERVADOS</p>
+        </div>
+    </footer> 
+
+    <!-- Popup Modal for Ingredients -->
+    <dialog id="ingredientsModal" class="ingredients-modal">
+        <div class="modal-content">
+            <button class="close-modal" aria-label="Close modal" id="closeModalBtn"><i class='bx bx-x'></i></button>
+            <h3 class="modal-title">Ingredientes</h3>
+            <p id="modalIngredientsText" class="modal-text"></p>
+        </div>
+    </dialog>
+
+      <!-- Mobile Popup Menu -->
+    <div class="popup hidden" id="mobile-menu">
+        <div class="popup__container">
+            <div class="popup__options">
+                <a class="popup__option" href="../../index.html">Inicio</a>
+                <a class="popup__option active" href="#">Ofertas</a>
+                <a class="popup__option" href="../gallery/gallery.html">Galería</a>
+                <a class="popup__option" href="../../index.html#contact">Contacto</a>
+                <a class="popup__btn-reservar" href="https://wa.me/qr/U4A5MXBXK6RQB1" target="_blank">Reservar</a>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="../../scripts/main.js"></script>
+  <script src="../../scripts/offers.js"></script>
+</body>
+</html>

@@ -25,7 +25,7 @@
         </div>
         <nav class="nav-links">
             <a href="index.html" class="active">Inicio</a>
-            <a href="/scripts/popup.html">Ofertas</a>
+            <a href="src/offers/offers.html">Ofertas</a>
             <a href="/src/gallery/gallery.html">Galería</a>
             <a href="#contact">Contacto</a>
         </nav>
@@ -55,8 +55,8 @@
                 <div class="hero-actions">
                     
                     <a href="https://wa.me/qr/U4A5MXBXK6RQB1" target="_blank" class="btn btn-primary btn-glow badge badge__whatsapp"><i class='bx bxl-whatsapp'></i> Reservar por WhatsApp</a>
-                    <a href="#products"class="btn btn-outline-light badge badge__products">Productos y Ofertas</a>
-                    <a href="#galeria" class="btn btn-outline-light badge badge__gallery">Ver Fotos</a>
+                    <a href="./src/offers/offers.html"class="btn btn-outline-light badge badge__products">Productos y Ofertas</a>
+                    <a href="./src/gallery/gallery.html" class="btn btn-outline-light badge badge__gallery">Ver Fotos</a>
                 </div>
             </div>
             <div class="scroll-indicator">
@@ -120,8 +120,8 @@
                     <h2 >¿Listo para desconectar?</h2>
                     <p>Nuestras cabañas tienen capacidad limitada.<br>Asegura tu lugar en este oasis hoy!!</p>
                     <div class="cta-actions">
-                        <a href="#whatsapp" class="btn btn-primary btn-glow badge badge__whatsapp">Contactar por WhatsApp</a>
-                        <a href="#cocina" class="btn btn-outline-light badge badge__products-about">Ver Nuestra Cocina</a>
+                        <a href="https://wa.me/qr/U4A5MXBXK6RQB1" target="_blank"class="btn btn-primary btn-glow badge badge__whatsapp">Contactar por WhatsApp</a>
+                        <a href="/src/offers/offers.html" class="btn btn-outline-light badge badge__products-about">Ver Nuestra Cocina</a>
                     </div>
                      <iframe class="location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2255.0166419192456!2d-76.6112875!3d20.8549681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ed20d9a2b6e2b93%3A0xcfa13dd2996aa5c0!2sMotel%20Los%20Pinos!5e1!3m2!1ses-419!2sus!4v1781714955998!5m2!1ses-419!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
@@ -146,8 +146,8 @@
                 <h4 class="footer-heading">NAVEGACIÓN</h4>
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
-                    <li><a href="/scripts/popup.html">Ofertas</a></li>
-                    <li><a href="#galeria">Galería</a></li>
+                    <li><a href="src/offers/offers.html">Ofertas</a></li>
+                    <li><a href="src/gallery/gallery.html">Galería</a></li>
                     <li><a href="#contacto">Contacto</a></li>
                 </ul>
             </div>
@@ -172,15 +172,14 @@
     <div class="popup hidden" id="mobile-menu">
         <div class="popup__container">
             <div class="popup__options">
-                <button class="popup__option active popup__option_home" onclick="window.location.href='#home'" >Inicio</button>
-                <button class="popup__option " onclick="window.location.href='src/offers/offers.html'">Ofertas</button>
-                <button class="popup__option" onclick="window.location.href='src/gallery/gallery.html'">Galería</button>
-                <button class="popup__option popup__option_contact" onclick="window.location.href='#contact'">Contacto</button>
+                <a class="popup__option active popup__option_home" href="#home" id="option-home">Inicio</a>
+                <a class="popup__option " href="src/offers/offers.html">Ofertas</a>
+                <a class="popup__option" href="src/gallery/gallery.html">Galería</a>
+                <a class="popup__option popup__option_contact" id="option-contact" href="#contact">Contacto</a>
                 <a class="popup__btn-reservar" target="_blank" href="https://www.google.com">Reservar</a>
             </div>
         </div>
     </div>
-
-    <script type="module" src="./scripts/main.js"></script>
+    <script type="module"  src="./scripts/main.js"></script>
 </body>
 </html>
