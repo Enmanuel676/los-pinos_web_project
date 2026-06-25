@@ -149,7 +149,7 @@ h1, h2, h3, h4, h5, h6, .logo-text {
     font-size: 1.1rem;
 }
 .logo-img{
-    background-image: url(../images/logo.webp);
+    background-image: url(../images/logos/logo.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -159,6 +159,12 @@ h1, h2, h3, h4, h5, h6, .logo-text {
 
 .nav-links {
     display: flex;
+margin-right: auto;
+margin-left:21vw ;
+
+
+   
+
     gap: 2rem;
 }
 
@@ -215,7 +221,7 @@ h1, h2, h3, h4, h5, h6, .logo-text {
     width: 100%;
     height: 100%;
     /* Placeholder background styling, you will replace with actual image */
-    background: url('../images/image3.1.webp') center/cover no-repeat;
+    background: url('../images/home/image3.1.webp') center/cover no-repeat;
     z-index: -2;
     filter: brightness(0.6);
 }
@@ -399,7 +405,7 @@ color: #176017;
     width: 100%;
     height: 600px;
     /* Placeholder background styling, replace with actual image */
-    background: url('../images/image4.webp') center/cover no-repeat;
+    background: url('../images/home/image4.webp') center/cover no-repeat;
     border-radius: 20px;
 }
 
