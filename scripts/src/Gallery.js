@@ -37,8 +37,10 @@ export class Gallery {
         this.#galleryItems.forEach(item => {
             item.addEventListener("click", () => {
                 const img     = item.querySelector("img");
-                const caption = item.querySelector(".gallery-overlay span")?.textContent ?? "";
-                this.#openModal(img.src, caption);
+                if (img) {
+                    const caption = item.querySelector(".gallery-overlay span")?.textContent ?? "";
+                    this.#openModal(img.src, caption);
+                }
             });
         });
 
@@ -50,6 +52,11 @@ export class Gallery {
             if (e.target === this.#modal) {
                 this.#closeModal();
             }
+        });
+
+        // Asegurar que al cerrar el modal (por ejemplo, con Escape) se restaure el scroll
+        this.#modal.addEventListener("close", () => {
+            document.body.style.overflow = "";
         });
 
         return true;
@@ -74,6 +81,6 @@ export class Gallery {
      */
     #closeModal() {
         this.#modal.close();
-        document.body.style.overflow = "";
+        // Nota: document.body.style.overflow = "" se ejecutará a través del evento 'close' del modal
     }
 }

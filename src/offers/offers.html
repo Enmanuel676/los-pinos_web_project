@@ -32,7 +32,6 @@
             <a href="../../src/gallery/gallery.html">Galería</a>
             <a href="../../index.html#contact">Contacto</a>
         </nav>
-        <!-- <a href="https://wa.me/qr/U4A5MXBXK6RQB1" class="btn btn-outline-primary nav-btn badge">Reservar</a> -->
         
         <!-- Mobile Menu Toggle -->
         <div class="menu-toggle">
@@ -46,165 +45,358 @@
             <p class="offers-subtitle">Descubre nuestra exquisita variedad gastronómica y de bebidas en el mejor ambiente.</p>
         </div>
 
-        <!-- Section 1: Entrantes o emparedados -->
-        <section class="offers-section">
-            <h2 class="section-heading">Entrantes y Emparedados</h2>
-            <div class="carousel-container">
-                <button class="carousel-btn prev-btn" aria-label="Anterior"><i class='bx bx-chevron-left'></i></button>
-                <div class="carousel-track" id="track-entrantes">
-                    <!-- Product 1 -->
-                    <div class="product-card">
-                        <img src="../../images/offers/sandwich.png" alt="Club Sandwich Gourmet" class="product-img">
-                        <div class="product-info">
-                            <h3 class="product-name">Club Sandwich Gourmet</h3>
-                            <p class="product-price">$12.00</p>
-                        </div>
-                    </div>
-                    <!-- Product 2 -->
-                    <div class="product-card">
-                        <img src="../../images/offers/sandwich.png" alt="Tapas Españolas" class="product-img">
-                        <div class="product-info">
-                            <h3 class="product-name">Tapas Españolas</h3>
-                            <p class="product-price">$9.50</p>
-                        </div>
-                    </div>
-                    <!-- Product 3 -->
-                    <div class="product-card">
-                        <img src="../../images/offers/sandwich.png" alt="Pan al Ajillo" class="product-img">
-                        <div class="product-info">
-                            <h3 class="product-name">Pan al Ajillo</h3>
-                            <p class="product-price">$5.00</p>
-                        </div>
-                    </div>
-                    <!-- Product 4 -->
-                    <div class="product-card">
-                        <img src="../../images/offers/sandwich.png" alt="Emparedado de Pollo" class="product-img">
-                        <div class="product-info">
-                            <h3 class="product-name">Emparedado de Pollo</h3>
-                            <p class="product-price">$8.50</p>
-                        </div>
-                    </div>
-                    <!-- Product 5 -->
-                    <div class="product-card">
-                        <img src="../../images/offers/sandwich.png" alt="Nachos con Queso" class="product-img">
-                        <div class="product-info">
-                            <h3 class="product-name">Nachos con Queso</h3>
-                            <p class="product-price">$10.00</p>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-btn next-btn" aria-label="Siguiente"><i class='bx bx-chevron-right'></i></button>
-            </div>
-        </section>
+        <!-- Filter System -->
+        <div class="filter-menu">
+            <button class="filter-btn active" data-filter="all">Todos</button>
+            <button class="filter-btn" data-filter="criolla">Comida Criolla</button>
+            <button class="filter-btn" data-filter="bebidas">Bebidas</button>
+            <button class="filter-btn" data-filter="italiana">Comida Italiana</button>
+            <button class="filter-btn" data-filter="hamburguesas">Hamburguesas</button>
+        </div>
 
-        <!-- Section 2: Comidas -->
-        <section class="offers-section">
-            <h2 class="section-heading">Comidas</h2>
-            <div class="carousel-container">
-                <button class="carousel-btn prev-btn" aria-label="Anterior"><i class='bx bx-chevron-left'></i></button>
-                <div class="carousel-track" id="track-comidas">
-                    <!-- Product 1 -->
-                    <div class="product-card">
-                        <img src="../../images/offers/meal.png" alt="Pechuga a la Parrilla" class="product-img">
-                        <div class="product-info">
-                            <h3 class="product-name">Pechuga a la Parrilla</h3>
-                            <p class="product-price">$18.00</p>
-                            <button class="btn btn-outline-primary btn-sm info-btn" data-ingredients="Pechuga de pollo fresca, vegetales salteados, especias finas, salsa de la casa, guarnición a elegir.">
-                                <i class='bx bx-info-circle'></i> Ver Ingredientes
-                            </button>
-                        </div>
-                    </div>
-                    <!-- Product 2 -->
-                    <div class="product-card">
-                        <img src="../../images/offers/meal.png" alt="Filete Mignon" class="product-img">
-                        <div class="product-info">
-                            <h3 class="product-name">Filete Mignon</h3>
-                            <p class="product-price">$25.00</p>
-                            <button class="btn btn-outline-primary btn-sm info-btn" data-ingredients="Medallón de res, tocino ahumado, salsa de champiñones, puré de papa rústico.">
-                                <i class='bx bx-info-circle'></i> Ver Ingredientes
-                            </button>
-                        </div>
-                    </div>
-                    <!-- Product 3 -->
-                    <div class="product-card">
-                        <img src="../../images/offers/meal.png" alt="Pasta Alfredo con Mariscos" class="product-img">
-                        <div class="product-info">
-                            <h3 class="product-name">Pasta Alfredo</h3>
-                            <p class="product-price">$22.00</p>
-                            <button class="btn btn-outline-primary btn-sm info-btn" data-ingredients="Pasta fresca, camarones, calamares, salsa cremosa Alfredo, queso parmesano, perejil.">
-                                <i class='bx bx-info-circle'></i> Ver Ingredientes
-                            </button>
-                        </div>
-                    </div>
-                     <!-- Product 4 -->
-                     <div class="product-card">
-                        <img src="../../images/offers/meal.png" alt="Lomo Saltado" class="product-img">
-                        <div class="product-info">
-                            <h3 class="product-name">Lomo Saltado</h3>
-                            <p class="product-price">$20.00</p>
-                            <button class="btn btn-outline-primary btn-sm info-btn" data-ingredients="Trozos de lomo de res, cebolla morada, tomate, papas fritas, arroz blanco.">
-                                <i class='bx bx-info-circle'></i> Ver Ingredientes
-                            </button>
-                        </div>
-                    </div>
+        <!-- Products Grid -->
+        <section class="products-grid">
+            <!-- Comida Criolla -->
+            <div class="product-card filter-item" data-category="criolla">
+                <img src="../../images/offers/chuleta_cerdo.jpg" alt="Chuleta de Cerdo" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-name">Chuleta de Cerdo</h3>
+                    <p class="product-price">$12.00</p>
+                    <button class="btn btn-outline-primary btn-sm info-btn" data-ingredients="Chuleta de cerdo asada al carbón, marinada con mojo criollo, acompañada de vianda y vegetales.">
+                        <i class='bx bx-info-circle'></i> Ver Ingredientes
+                    </button>
                 </div>
-                <button class="carousel-btn next-btn" aria-label="Siguiente"><i class='bx bx-chevron-right'></i></button>
             </div>
-        </section>
 
-        <!-- Section 3: Bebidas -->
-        <section class="offers-section">
-            <h2 class="section-heading">Bebidas</h2>
-            <div class="carousel-container">
-                <button class="carousel-btn prev-btn" aria-label="Anterior"><i class='bx bx-chevron-left'></i></button>
-                <div class="carousel-track" id="track-bebidas">
-                    <!-- Product 1 -->
-                    <div class="product-card">
-                        <img src="../../images/offers/drink.png" alt="Mojito Clásico" class="product-img">
-                        <div class="product-info">
-                            <h3 class="product-name">Mojito Clásico</h3>
-                            <p class="product-price">$6.00</p>
-                        </div>
-                    </div>
-                    <!-- Product 2 -->
-                    <div class="product-card">
-                        <img src="../../images/offers/drink.png" alt="Piña Colada" class="product-img">
-                        <div class="product-info">
-                            <h3 class="product-name">Piña Colada</h3>
-                            <p class="product-price">$7.00</p>
-                        </div>
-                    </div>
-                    <!-- Product 3 -->
-                    <div class="product-card">
-                        <img src="../../images/offers/drink.png" alt="Cerveza Artesanal" class="product-img">
-                        <div class="product-info">
-                            <h3 class="product-name">Cerveza Artesanal</h3>
-                            <p class="product-price">$5.00</p>
-                        </div>
-                    </div>
-                    <!-- Product 4 -->
-                    <div class="product-card">
-                        <img src="../../images/offers/drink.png" alt="Jugo Natural" class="product-img">
-                        <div class="product-info">
-                            <h3 class="product-name">Jugo Natural</h3>
-                            <p class="product-price">$4.00</p>
-                        </div>
-                    </div>
-                    <!-- Product 5 -->
-                    <div class="product-card">
-                        <img src="../../images/offers/drink.png" alt="Margarita" class="product-img">
-                        <div class="product-info">
-                            <h3 class="product-name">Margarita</h3>
-                            <p class="product-price">$8.00</p>
-                        </div>
-                    </div>
+            <div class="product-card filter-item" data-category="criolla">
+                <img src="../../images/offers/bistec_grille.jpg" alt="Bistec Grille de Cerdo" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-name">Bistec Grillé</h3>
+                    <p class="product-price">$13.00</p>
+                    <button class="btn btn-outline-primary btn-sm info-btn" data-ingredients="Jugoso bistec de cerdo a la plancha con cebollas, cocinado a la perfección con sabor cubano.">
+                        <i class='bx bx-info-circle'></i> Ver Ingredientes
+                    </button>
                 </div>
-                <button class="carousel-btn next-btn" aria-label="Siguiente"><i class='bx bx-chevron-right'></i></button>
+            </div>
+
+            <div class="product-card filter-item" data-category="criolla">
+                <img src="../../images/offers/fricase_cerdo.jpg" alt="Fricasé de Cerdo" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-name">Fricasé de Cerdo</h3>
+                    <p class="product-price">$11.50</p>
+                    <button class="btn btn-outline-primary btn-sm info-btn" data-ingredients="Guiso tradicional de cerdo en rica salsa de tomate con papas, especias y aceitunas.">
+                        <i class='bx bx-info-circle'></i> Ver Ingredientes
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card filter-item" data-category="criolla">
+                <img src="../../images/offers/racion_arroz_moro.jpg" alt="Ración de Arroz Moro" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-name">Ración Arroz Moro</h3>
+                    <p class="product-price">$4.00</p>
+                    <button class="btn btn-outline-primary btn-sm info-btn" data-ingredients="Clásico congrí cubano de arroz con frijoles negros y especias tradicionales.">
+                        <i class='bx bx-info-circle'></i> Ver Ingredientes
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card filter-item" data-category="criolla">
+                <img src="../../images/offers/racion_arroz_blanco.jpg" alt="Ración de Arroz Blanco" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-name">Ración Arroz Blanco</h3>
+                    <p class="product-price">$3.00</p>
+                    <button class="btn btn-outline-primary btn-sm info-btn" data-ingredients="Porción generosa de arroz blanco cocinado suelto y a la perfección.">
+                        <i class='bx bx-info-circle'></i> Ver Ingredientes
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card filter-item" data-category="criolla">
+                <img src="../../images/offers/comida_criolla_cubana_1782769121035.jpg" alt="Arroz Congri con Cerdo Asado" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-name">Congrí y Cerdo Asado</h3>
+                    <p class="product-price">$12.00</p>
+                    <button class="btn btn-outline-primary btn-sm info-btn" data-ingredients="Arroz congrí tradicional, cerdo asado jugoso, viandas hervidas, ensalada de estación.">
+                        <i class='bx bx-info-circle'></i> Ver Ingredientes
+                    </button>
+                </div>
+            </div>
+            
+            <div class="product-card filter-item" data-category="criolla">
+                <img src="../../images/offers/masas_de_cerdo_1782769360704.jpg" alt="Masas de Cerdo Fritas" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-name">Masas de Cerdo Fritas</h3>
+                    <p class="product-price">$14.00</p>
+                    <button class="btn btn-outline-primary btn-sm info-btn" data-ingredients="Masas de cerdo fritas, tostones, mojo criollo, arroz blanco y frijoles negros.">
+                        <i class='bx bx-info-circle'></i> Ver Ingredientes
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card filter-item" data-category="criolla">
+                <img src="../../images/offers/ropa_vieja_1782769348309.jpg" alt="Ropa Vieja" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-name">Ropa Vieja</h3>
+                    <p class="product-price">$15.00</p>
+                    <button class="btn btn-outline-primary btn-sm info-btn" data-ingredients="Carne de res deshebrada en salsa de tomate criolla, pimientos, arroz y plátano maduro frito.">
+                        <i class='bx bx-info-circle'></i> Ver Ingredientes
+                    </button>
+                </div>
+            </div>
+
+            
+
+            <!-- Comida Italiana (Pizzas y Espaguetis) -->
+            
+
+            <div class="product-card filter-item" data-category="italiana">
+                <img src="../../images/offers/pizza_carbonara.jpg" alt="Pizza Carbonara" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-name">Pizza Carbonara</h3>
+                    <p class="product-price">$16.00</p>
+                    <button class="btn btn-outline-primary btn-sm info-btn" data-ingredients="Salsa blanca, tocineta, huevo, queso mozzarella y un toque de pimienta negra.">
+                        <i class='bx bx-info-circle'></i> Ver Ingredientes
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card filter-item" data-category="italiana">
+                <img src="../../images/offers/pizza_jamon.jpg" alt="Pizza de Jamón" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-name">Pizza de Jamón</h3>
+                    <p class="product-price">$13.50</p>
+                    <button class="btn btn-outline-primary btn-sm info-btn" data-ingredients="Salsa de tomate, queso mozzarella y abundantes lascas de jamón.">
+                        <i class='bx bx-info-circle'></i> Ver Ingredientes
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card filter-item" data-category="italiana">
+                <img src="../../images/offers/pizza_chorizo.jpg" alt="Pizza de Chorizo" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-name">Pizza de Chorizo</h3>
+                    <p class="product-price">$14.50</p>
+                    <button class="btn btn-outline-primary btn-sm info-btn" data-ingredients="Salsa de tomate, queso mozzarella y rodajas de chorizo picante.">
+                        <i class='bx bx-info-circle'></i> Ver Ingredientes
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card filter-item" data-category="italiana">
+                <img src="../../images/offers/pizza_hawaiana.jpg" alt="Pizza Hawaiana" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-name">Pizza Hawaiana</h3>
+                    <p class="product-price">$15.00</p>
+                    <button class="btn btn-outline-primary btn-sm info-btn" data-ingredients="Salsa de tomate, queso mozzarella, jamón y trozos de piña agridulce.">
+                        <i class='bx bx-info-circle'></i> Ver Ingredientes
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card filter-item" data-category="italiana">
+                <img src="../../images/offers/pizza_4_estaciones.jpg" alt="Pizza 4 Estaciones" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-name">Pizza 4 Estaciones</h3>
+                    <p class="product-price">$17.00</p>
+                    <button class="btn btn-outline-primary btn-sm info-btn" data-ingredients="Dividida en 4 partes con alcachofas, champiñones, jamón y aceitunas.">
+                        <i class='bx bx-info-circle'></i> Ver Ingredientes
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card filter-item" data-category="italiana">
+                <img src="../../images/offers/pizza_doble_queso.jpg" alt="Pizza Doble Queso" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-name">Pizza Doble Queso</h3>
+                    <p class="product-price">$16.50</p>
+                    <button class="btn btn-outline-primary btn-sm info-btn" data-ingredients="Salsa de tomate, extra queso mozzarella derretido y queso cheddar.">
+                        <i class='bx bx-info-circle'></i> Ver Ingredientes
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card filter-item" data-category="italiana">
+                <img src="../../images/offers/espagueti_jamon_queso.jpg" alt="Espagueti de Jamón y Queso" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-name">Espaguetis Jamón y Queso</h3>
+                    <p class="product-price">$8.00</p>
+                    <button class="btn btn-outline-primary btn-sm info-btn" data-ingredients="Pasta fresca con salsa cremosa, jamón en cuadritos y abundante queso fundido.">
+                        <i class='bx bx-info-circle'></i> Ver Ingredientes
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card filter-item" data-category="italiana">
+                <img src="../../images/offers/espaguetis_chorizo.jpg" alt="Espaguetis de Chorizo" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-name">Espaguetis con Chorizo</h3>
+                    <p class="product-price">$9.00</p>
+                    <button class="btn btn-outline-primary btn-sm info-btn" data-ingredients="Pasta fresca con salsa de tomate napolitana y rodajas de chorizo criollo.">
+                        <i class='bx bx-info-circle'></i> Ver Ingredientes
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card filter-item" data-category="italiana">
+                <img src="../../images/offers/espaguetis_parmesano.jpg" alt="Espaguetis Parmesano" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-name">Espaguetis Parmesano</h3>
+                    <p class="product-price">$10.00</p>
+                    <button class="btn btn-outline-primary btn-sm info-btn" data-ingredients="Pasta fresca cubierta con generoso queso parmesano rallado y finas hierbas.">
+                        <i class='bx bx-info-circle'></i> Ver Ingredientes
+                    </button>
+                </div>
+            </div>
+
+            <!-- Hamburguesas -->
+            <div class="product-card filter-item" data-category="hamburguesas">
+                <img src="../../images/offers/hamburguesa_clasica.jpg" alt="Hamburguesa Clásica" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-name">Hamburguesa Clásica</h3>
+                    <p class="product-price">$8.50</p>
+                    <button class="btn btn-outline-primary btn-sm info-btn" data-ingredients="Carne de res jugosa, queso cheddar, lechuga fresca, tomate, cebolla, pan artesanal y papas fritas.">
+                        <i class='bx bx-info-circle'></i> Ver Ingredientes
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card filter-item" data-category="hamburguesas">
+                <img src="../../images/offers/hamburguesa_especial.jpg" alt="Hamburguesa Especial" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-name">Hamburguesa Especial</h3>
+                    <p class="product-price">$12.50</p>
+                    <button class="btn btn-outline-primary btn-sm info-btn" data-ingredients="Doble carne de res, tocino, queso derretido, cebolla caramelizada, salsa de la casa, pan artesanal y papas fritas.">
+                        <i class='bx bx-info-circle'></i> Ver Ingredientes
+                    </button>
+                </div>
+            </div>
+            
+            <div class="product-card filter-item" data-category="hamburguesas">
+                <img src="../../images/offers/hamburguesa_1782769448876.jpg" alt="Hamburguesa Clásica con Queso" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-name">Hamburguesa con Queso</h3>
+                    <p class="product-price">$9.50</p>
+                    <button class="btn btn-outline-primary btn-sm info-btn" data-ingredients="Carne de res, doble queso cheddar, vegetales frescos y salsa especial.">
+                        <i class='bx bx-info-circle'></i> Ver Ingredientes
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card filter-item" data-category="hamburguesas">
+                <img src="../../images/offers/hamburguesa_a_caballo.jpg" alt="Hamburguesa a Caballo" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-name">Hamburguesa a Caballo</h3>
+                    <p class="product-price">$10.00</p>
+                    <button class="btn btn-outline-primary btn-sm info-btn" data-ingredients="Carne de res, queso, huevo frito a la perfección, vegetales frescos y papas fritas.">
+                        <i class='bx bx-info-circle'></i> Ver Ingredientes
+                    </button>
+                </div>
+            </div>
+            
+             <div class="product-card filter-item" data-category="hamburguesas">
+                <img src="../../images/offers/hamburguesa_1782769448876.jpg" alt="Hamburguesa Doble Bacon" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-name">Hamburguesa Doble Bacon</h3>
+                    <p class="product-price">$11.00</p>
+                    <button class="btn btn-outline-primary btn-sm info-btn" data-ingredients="Doble carne de res, doble queso, crujiente tocino, salsa especial, pan artesanal y papas fritas.">
+                        <i class='bx bx-info-circle'></i> Ver Ingredientes
+                    </button>
+                </div>
+            </div>
+            <!-- Bebidas -->
+            <div class="product-card filter-item" data-category="bebidas">
+                <img src="../../images/offers/mojito_1782769474728.jpg" alt="Mojito Cubano" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-name">Mojito Cubano</h3>
+                    <p class="product-price">$5.00</p>
+                    <button class="btn btn-outline-primary btn-sm info-btn" data-ingredients="Ron blanco, hierbabuena fresca, azúcar, jugo de limón, agua con gas y hielo.">
+                        <i class='bx bx-info-circle'></i> Ver Ingredientes
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card filter-item" data-category="bebidas">
+                <img src="../../images/offers/cerveza_cristal_1782769624469.jpg" alt="Cervezas Importadas" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-name">Cerveza Importada</h3>
+                    <p class="product-price">$3.50</p>
+                    <button class="btn btn-outline-primary btn-sm info-btn" data-ingredients="Variedad de cervezas importadas bien frías en lata o botella (Heineken, Corona, Stella, etc).">
+                        <i class='bx bx-info-circle'></i> Ver Ingredientes
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card filter-item" data-category="bebidas">
+                <img src="../../images/offers/refresco_lata.jpg" alt="Refrescos en Lata" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-name">Refresco Lata</h3>
+                    <p class="product-price">$2.00</p>
+                    <button class="btn btn-outline-primary btn-sm info-btn" data-ingredients="Surtido de refrescos importados en lata (Cola, Naranja, Limón).">
+                        <i class='bx bx-info-circle'></i> Ver Ingredientes
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card filter-item" data-category="bebidas">
+                <img src="../../images/offers/jugo_pina_1782769638128.jpg" alt="Jugos Importados" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-name">Jugo de Cajita</h3>
+                    <p class="product-price">$2.50</p>
+                    <button class="btn btn-outline-primary btn-sm info-btn" data-ingredients="Jugos importados de sabores tropicales (Mango, Guayaba, Manzana).">
+                        <i class='bx bx-info-circle'></i> Ver Ingredientes
+                    </button>
+                </div>
+            </div>
+
+            <!-- Nuevos Cócteles -->
+            <div class="product-card filter-item" data-category="bebidas">
+                <img src="../../images/offers/margarita.jpg" alt="Margarita" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-name">Margarita</h3>
+                    <p class="product-price">$6.00</p>
+                    <button class="btn btn-outline-primary btn-sm info-btn" data-ingredients="Tequila, triple sec, y jugo de limón fresco servido en copa con borde de sal.">
+                        <i class='bx bx-info-circle'></i> Ver Ingredientes
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card filter-item" data-category="bebidas">
+                <img src="../../images/offers/cubalibre.jpg" alt="Cuba Libre" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-name">Cuba Libre</h3>
+                    <p class="product-price">$5.00</p>
+                    <button class="btn btn-outline-primary btn-sm info-btn" data-ingredients="Ron blanco cubano, refresco de cola, hielo y unas gotas de limón.">
+                        <i class='bx bx-info-circle'></i> Ver Ingredientes
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card filter-item" data-category="bebidas">
+                <img src="../../images/offers/cubata.jpg" alt="Cubata" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-name">Cubata</h3>
+                    <p class="product-price">$5.50</p>
+                    <button class="btn btn-outline-primary btn-sm info-btn" data-ingredients="Ron oscuro añejo, refresco de cola, hielo y rodaja de limón.">
+                        <i class='bx bx-info-circle'></i> Ver Ingredientes
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card filter-item" data-category="bebidas">
+                <img src="../../images/offers/martini.jpg" alt="Martini" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-name">Martini</h3>
+                    <p class="product-price">$7.00</p>
+                    <button class="btn btn-outline-primary btn-sm info-btn" data-ingredients="Ginebra y vermut seco, servido muy frío en copa elegante con aceitunas.">
+                        <i class='bx bx-info-circle'></i> Ver Ingredientes
+                    </button>
+                </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer (Same as index.html for consistency) -->
+    <!-- Footer -->
     <footer class="footer">
         <div class="container footer-grid">
             <div class="footer-brand">
@@ -261,7 +453,7 @@
             </div>
         </div>
     </div>
+    
     <script type="module" src="../../scripts/main.js"></script>
-
 </body>
 </html>

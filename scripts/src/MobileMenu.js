@@ -53,9 +53,13 @@ export class MobileMenu {
         this.#mobileMenu.classList.toggle("hidden");
 
         if (this.#navBar) {
-            this.#navBar.className = this.#mobileMenu.classList.contains("hidden")
-                ? "navbar"
-                : "navbar__hidden";
+            if (this.#mobileMenu.classList.contains("hidden")) {
+                this.#navBar.classList.remove("navbar__hidden");
+                this.#navBar.classList.add("navbar");
+            } else {
+                this.#navBar.classList.remove("navbar");
+                this.#navBar.classList.add("navbar__hidden");
+            }
         }
 
         document.body.style.overflow = this.#mobileMenu.classList.contains("hidden")
@@ -68,7 +72,10 @@ export class MobileMenu {
      */
     #close() {
         this.#mobileMenu.classList.add("hidden");
-        if (this.#navBar) this.#navBar.className = "navbar";
+        if (this.#navBar) {
+            this.#navBar.classList.remove("navbar__hidden");
+            this.#navBar.classList.add("navbar");
+        }
         document.body.style.overflow = "auto";
     }
 

@@ -19,6 +19,26 @@ document.addEventListener("DOMContentLoaded", () => {
     // ── Menú móvil: presente en todas las páginas ─────────────────────────
     new MobileMenu().init();
 
+    // ── Scroll Reveal Animations ──────────────────────────────────────────
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.15
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.reveal').forEach(element => {
+        observer.observe(element);
+    });
+
     // ── Módulos por página ────────────────────────────────────────────────
     const pageId = document.body.id; // 'home' | 'gallery' | 'offers'
 

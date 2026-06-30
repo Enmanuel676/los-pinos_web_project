@@ -13,7 +13,7 @@
 
 .offers-header {
     text-align: center;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     padding: 0 2rem;
 }
 
@@ -31,90 +31,55 @@
     margin: 0 auto;
 }
 
-.offers-section {
-    margin-bottom: 4rem;
-    position: relative;
-}
-
-.section-heading {
-    font-size: 2rem;
-    margin-left: 4rem;
-    margin-bottom: 1.5rem;
-    color: var(--text-main);
-    border-left: 4px solid var(--primary-color);
-    padding-left: 1rem;
-}
-
-/* Carousel Container */
-.carousel-container {
+/* Filter Menu */
+.filter-menu {
     display: flex;
-    align-items: center;
-    position: relative;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 3rem;
     padding: 0 1rem;
 }
 
-/* Scroll Track */
-.carousel-track {
-    display: flex;
-    gap: 1.5rem;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    scroll-snap-type: x mandatory;
-    padding: 1rem 3rem; /* padding inside track to make room for shadow effects */
-    /* Hide scrollbar */
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
-
-.carousel-track::-webkit-scrollbar {
-    display: none;
-}
-
-/* Carousel Nav Buttons */
-.carousel-btn {
-    background: rgba(30, 215, 96, 0.1);
-    color: var(--primary-color);
-    border: 1px solid rgba(30, 215, 96, 0.3);
-    border-radius: 50%;
-    width: 48px;
-    height: 48px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
+.filter-btn {
+    background: transparent;
+    color: var(--text-main);
+    border: 2px solid var(--primary-color);
+    padding: 0.5rem 1.5rem;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 500;
     cursor: pointer;
-    position: absolute;
-    z-index: 10;
     transition: all 0.3s ease;
-    backdrop-filter: blur(5px);
 }
 
-.carousel-btn:hover {
-    background: rgba(30, 215, 96, 0.3);
+.filter-btn:hover, .filter-btn.active {
+    background: var(--primary-color);
+    color: var(--bg-main);
     box-shadow: 0 0 15px var(--primary-glow);
-    transform: scale(1.1);
 }
 
-.prev-btn {
-    left: 1rem;
-}
-
-.next-btn {
-    right: 1rem;
+/* Products Grid */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 0 2rem;
 }
 
 /* Product Card */
 .product-card {
-    min-width: 280px;
-    max-width: 280px;
     background-color: var(--bg-card);
     border: 1px solid var(--border-color);
     border-radius: 16px;
     overflow: hidden;
-    scroll-snap-align: center;
-    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
     display: flex;
     flex-direction: column;
+}
+
+.product-card.hidden {
+    display: none;
 }
 
 .product-card:hover {
@@ -144,6 +109,7 @@
 }
 
 .product-price {
+    display: none;
     font-size: 1.1rem;
     color: var(--primary-color);
     font-weight: 600;
@@ -212,16 +178,15 @@
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    .section-heading {
-        margin-left: 2rem;
+    .filter-menu {
+        gap: 0.5rem;
     }
-    .carousel-btn {
-        display: none; /* Hide arrows on mobile, rely on touch scroll */
+    .filter-btn {
+        padding: 0.4rem 1rem;
+        font-size: 0.9rem;
     }
-    .carousel-track {
-        padding: 1rem 2rem;
-    }
-    .product-card {
-        min-width: 240px; /* Slightly smaller cards on mobile */
+    .products-grid {
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        padding: 0 1rem;
     }
 }

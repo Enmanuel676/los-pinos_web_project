@@ -33,10 +33,44 @@ export class OffersPage {
     init() {
         this.#initCarousels();
         this.#initIngredientsModal();
+        this.#initFilters();
         return true;
     }
 
     // ─── Métodos privados ────────────────────────────────────────────────────
+
+    /**
+     * Inicializa el filtrado de productos por categoría.
+     */
+    #initFilters() {
+        const filterBtns = document.querySelectorAll(".filter-btn");
+        const filterItems = document.querySelectorAll(".filter-item");
+
+        if (filterBtns.length === 0 || filterItems.length === 0) return;
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener("click", () => {
+                // Remove active class from all buttons
+                filterBtns.forEach(b => b.classList.remove("active"));
+                // Add active class to clicked button
+                btn.classList.add("active");
+
+                const filterValue = btn.getAttribute("data-filter");
+
+                filterItems.forEach(item => {
+                    if (filterValue === "all") {
+                        item.classList.remove("hidden");
+                    } else {
+                        if (item.getAttribute("data-category") === filterValue) {
+                            item.classList.remove("hidden");
+                        } else {
+                            item.classList.add("hidden");
+                        }
+                    }
+                });
+            });
+        });
+    }
 
     /**
      * Conecta los botones prev/next a cada carrusel encontrado en el DOM.
@@ -82,16 +116,11 @@ export class OffersPage {
         // Cerrar con el botón X
         this.#closeBtn.addEventListener("click", () => this.#closeModal());
 
-        // Cerrar al hacer clic fuera del cuadro del dialog
+        // Cerrar al hacer clic fuera del cuadro del dialog (e.target === this.#modal)
         this.#modal.addEventListener("click", (e) => {
-            const rect = this.#modal.getBoundingClientRect();
-            const clickedOutside =
-                e.clientX < rect.left  ||
-                e.clientX > rect.right ||
-                e.clientY < rect.top   ||
-                e.clientY > rect.bottom;
-
-            if (clickedOutside) this.#closeModal();
+            if (e.target === this.#modal) {
+                this.#closeModal();
+            }
         });
     }
 
