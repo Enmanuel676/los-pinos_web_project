@@ -563,7 +563,7 @@ padding-top: 0.6rem;
     backdrop-filter: blur(20px);
     border: 1px solid var(--border-color);
     border-radius: 24px;
-    padding: 5rem 2rem;
+    padding: 5rem 2rem ;
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -724,8 +724,10 @@ padding-top: 0.6rem;
         flex-direction: column;
     }
     .location{
-        
-        width: 100%;
+       
+       width: 83vw;
+  border-radius: 15px;
+  margin: -30px;
     }
     
     
@@ -735,7 +737,13 @@ padding-top: 0.6rem;
         text-align: center;
     }
 }
-
+@media (max-width: 500px) {
+  .cta-card{
+      
+   
+  padding-top: 6rem;
+  }
+}
 @media(max-width: 465px){
     .hero{
         margin-top: -30px;
@@ -749,6 +757,7 @@ padding-top: 0.6rem;
     .historia-image{
         background-position: center;
     }
+    
 }
 
 /* Scroll Reveal Animations */
